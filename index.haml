@@ -1,0 +1,51 @@
+!!!5
+%html{:lang => "en"}
+	%head
+		%title Xi Rao's Homepage
+		%meta{:charset => "utf-8"}/
+		%link{:href => "/assets/css/screen.css", :rel => "stylesheet"}/
+		%script{:src => "//use.typekit.net/tnn8xdo.js", :type => "text/javascript"}
+		:javascript
+			try{Typekit.load();}catch(e){}
+	%body
+		#page
+			%section#start.start
+				%header#header{:role => "banner"}
+					%h1 
+						%span P
+						ortfolio
+				.content#in
+					#about
+						:markdown
+							This portfolio book contains 18 exercises of Document Design.
+
+							"Typography"
+
+							"Color"
+
+							"Grid"
+
+							..
+					#name
+						:markdown
+							[Xi Rao](#)
+				.content#me
+					#introduction
+						:markdown
+							Hi, I am Xi Rao, a designer. Now I'm in Chicago.
+
+							I'm interested in many kinds of design: document design, graphic design, interaction design..
+
+							If you are interested in me or my works. Please feel free to contact me by [cicirao@gmail.com]().
+					#back
+			%section#exercises.section2
+				.content#wall
+					%ul#portfolio
+						%li#ex1
+							%a{:href => "#"}
+								:markdown
+									Draw these words
+			%footer#footer
+				:markdown
+					Site created by Xi Rao using HAML, SASS, and GoogleFonts. [Source on GitHub]().
+		%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", :type => "text/javascript"}

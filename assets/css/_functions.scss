@@ -1,0 +1,13 @@
+// Functions and Mixins
+
+@function -k-px-to-em($target,$context:$baseFS) {
+  @return ($target / $context) * 1em;
+}
+@function -k-px-to-pct($target,$context:$baseFS) {
+  @return ($target / $context) * 100%;
+}
+
+@mixin -k-typescale($fontSize,$lineHeight,$context:16) {
+  font-size: #{$fontSize/$context}em;
+  line-height: #{$lineHeight/$fontSize}em;
+}

@@ -1,0 +1,136 @@
+/*
+YUI 3.13.0 (build 508226d)
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html {
+  color: #000;
+  background: #FFF; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+input, textarea, select {
+  *font-size: 100%; }
+
+legend {
+  color: #000; }
+
+html {
+  background: #fbefd0;
+  color: #555555; }
+
+section#start header#header {
+  color: #4876a9; }
+section#start .content#in #about {
+  color: #555555; }
+section#start .content#in #name {
+  color: #fcab38; }
+section#start .content#me {
+  color: #555555; }
+
+section#exercises.section2 .content#wall ul#portfolio li {
+  background: #fcab38;
+  color: #555555; }
+
+footer#footer p {
+  color: #949590; }
+
+a {
+  color: inherit; }
+  a:hover, a:active, a:focus {
+    color: #efefef; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 100%; }
+
+body {
+  -webkit-text-rendering: optimizeLegibility;
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.33333em; }
+
+/* Faces, Weights, Sizes, Transforms and Layout-Independent Offsets */
+section#start header#header {
+  font-family: "coquette", sans-serif;
+  font-style: italic; }
+  section#start header#header h1 {
+    font-size: 4em;
+    line-height: 0.33333em;
+    text-transform: uppercase;
+    letter-spacing: 0.0203125em;
+    padding-left: 0.66667em;
+    padding-top: 1.33333em; }
+    section#start header#header h1 span {
+      font-size: 2.66667em;
+      line-height: 0.5em; }
+section#start .content#in #about {
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-size: 1.11111em;
+  line-height: 1.2em;
+  padding-top: 1.33333em; }
+section#start .content#in #name {
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-size: 1.55556em;
+  line-height: 0.85714em; }
+section#start .content#me {
+  font-family: "proxima-nova-condensed", sans-serif; }
+  section#start .content#me #introduction {
+    font-size: 1.11111em;
+    line-height: 1.2em;
+    padding-top: 0.75em;
+    padding-left: 0.66667em; }
+
+section#exercises.section2 .content#wall ul#portfolio li {
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-size: 1.11111em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 0.75em; }
+
+footer#footer p {
+  font-size: 0.77778em;
+  line-height: 1.71429em; }

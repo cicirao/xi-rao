@@ -1,0 +1,94 @@
+@import "functions";
+
+$coquette: "coquette",sans-serif;
+$proximaNovaCondensed: "proxima-nova-condensed",sans-serif;
+$alternateGothic3: "alternate-gothic-no-3-d",sans-serif;
+$ffTisaPro: "ff-tisa-pro",serif;
+
+$logoFont: $coquette;
+$headlineFont: $alternateGothic3;
+$copyFont: $proximaNovaCondensed;
+$specialFont: $ffTisaPro;
+
+// Font sizes
+$baseFS: 18;
+$baseLH: 24;
+$baseRatio: $baseLH/$baseFS; //Ideal ratio of line-height to font-size
+
+// Font sizes with em units
+$baseFontSize: #{$baseFS/16}em;
+$baseLineHeight: #{$baseLH/$baseFS}em;
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+body {
+  -webkit-text-rendering: optimizeLegibility;
+  font-family: $copyFont;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+}
+
+/* Faces, Weights, Sizes, Transforms and Layout-Independent Offsets */
+
+section#start {
+  header#header {
+    font-family: $logoFont;
+    font-style: italic;
+    h1 {
+      @include -k-typescale(72,$baseLH,$baseFS);
+      text-transform: uppercase;
+      letter-spacing: 0.0203125em;
+      padding-left: -k-px-to-em($baseLH/2);
+      padding-top: -k-px-to-em($baseLH); 
+      span {
+        @include -k-typescale(48,$baseLH,$baseFS);
+      }
+    }
+  } 
+  .content#in {
+    #about {
+      font-family: $copyFont;
+      @include -k-typescale(20,$baseLH,$baseFS);
+      padding-top: -k-px-to-em($baseLH);
+    }
+    #name {
+      font-family: $headlineFont;
+      @include -k-typescale(28,$baseLH,$baseFS);
+    }
+  }
+  .content#me {
+    font-family: $copyFont;
+    #introduction {
+      @include -k-typescale(20,$baseLH,$baseFS);
+      padding-top: -k-px-to-em($baseLH*.5,16);
+      padding-left: -k-px-to-em($baseLH/2);
+    }
+    #back {
+    }
+  }
+}
+
+section#exercises.section2 {
+  .content#wall {
+    ul#portfolio {
+      li {
+        font-family: $headlineFont;
+        @include -k-typescale(20,$baseLH,$baseFS);
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: -k-px-to-em($baseLH*.5,16);
+      }
+    }
+  }
+}
+
+footer#footer {
+  p {
+    @include -k-typescale(14,$baseLH,$baseFS);
+  }
+}
+
+

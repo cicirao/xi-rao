@@ -1,0 +1,62 @@
+//Colors
+$ink: #4876a9;
+$paper: #fbefd0;
+$orange: #fcab38;
+$dark: #555555;
+$light: #949590;
+$white: #efefef;
+
+//Generic, reusable colors
+$background: $paper;
+$titleBackground: $ink;
+$blockBackground: $orange;
+$logoText: $ink;
+$specialText: $light;
+$smallText: $light;
+$nameText: $orange;
+$primaryText: $white;
+$copyText: $dark;
+
+html {
+	background: $background;
+	color: $copyText;
+}
+
+section#start {
+	header#header {
+		color: $logoText;
+	}
+	.content#in {
+		#about {
+			color: $copyText;
+		}
+		#name {
+			color: $nameText;
+		}
+	}
+	.content#me {
+		color: $copyText;
+	}
+}
+
+section#exercises.section2 {
+	.content#wall {
+		ul#portfolio {
+			li {
+				background: $blockBackground;
+				color: $copyText;
+			}
+		}
+	}
+}
+
+footer#footer {
+	p {
+		color: $specialText;
+	}
+}
+
+a {
+	color: inherit;
+	&:hover,&:active,&:focus { color: $primaryText; }
+}
