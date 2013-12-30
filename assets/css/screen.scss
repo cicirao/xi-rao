@@ -1,4 +1,44 @@
+@charset "UTF-8";
 @import "reset";
 @import "functions";
 @import "colors";
 @import "typography";
+
+/*Layout and Display*/
+
+header,footer,section,p,a {display: block; }
+
+header#header,footer#footer {
+  padding-top: -k-px-to-em($baseLH*.6);
+  padding-bottom: -k-px-to-em($baseLH*.6);
+}
+
+section#start {
+	height: -k-px-to-em($baseLH*32);
+	position: relative;
+	opacity: 0.72;
+  header#header {
+    img {
+      max-width: 2em;
+      padding-top: -k-px-to-em($baseLH*.5);
+    }
+    h1 {
+      padding-top: -k-px-to-em($baseLH*.5); 
+    }
+  } 
+  .content#in {
+    #about {
+      padding: -k-px-to-em($baseLH);
+    }
+    a {
+    	#dl {
+      width: 9em;
+      margin: 0 auto;
+      padding: -k-px-to-em($baseLH*.7); 
+      -moz-border-radius: -k-px-to-em($baseLH*.4);
+      -webkit-border-radius: -k-px-to-em($baseLH*.4);
+      border-radius: -k-px-to-em($baseLH*.4);
+      }
+    }
+  }
+}

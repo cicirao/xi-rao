@@ -58,21 +58,18 @@ legend {
   color: #000; }
 
 html {
-  background: #fbefd0;
-  color: #555555; }
+  background-color: #fbefd0;
+  color: #525150; }
 
-section#start header#header {
-  color: #4876a9; }
-section#start .content#in #about {
-  color: #555555; }
-section#start .content#in #name {
-  color: #fcab38; }
-section#start .content#me {
-  color: #555555; }
-
-section#exercises.section2 .content#wall ul#portfolio li {
-  background: #fcab38;
-  color: #555555; }
+section#start {
+  background-color: #000; }
+  section#start header#header {
+    color: #efefef; }
+  section#start .content#in #about {
+    color: #525150; }
+  section#start .content#in #dl {
+    color: #efefef;
+    background-color: #fcab38; }
 
 footer#footer p {
   color: #949590; }
@@ -90,47 +87,60 @@ body {
   -webkit-text-rendering: optimizeLegibility;
   font-family: "proxima-nova-condensed", sans-serif;
   font-size: 1.125em;
-  line-height: 1.33333em; }
+  line-height: 1.33333em;
+  text-align: center; }
+
+a {
+  text-decoration: none; }
 
 /* Faces, Weights, Sizes, Transforms and Layout-Independent Offsets */
 section#start header#header {
-  font-family: "coquette", sans-serif;
-  font-style: italic; }
+  font-family: "alternate-gothic-no-3-d", sans-serif; }
   section#start header#header h1 {
     font-size: 4em;
-    line-height: 0.33333em;
+    line-height: 1.5em;
     text-transform: uppercase;
-    letter-spacing: 0.0203125em;
-    padding-left: 0.66667em;
-    padding-top: 1.33333em; }
-    section#start header#header h1 span {
-      font-size: 2.66667em;
-      line-height: 0.5em; }
+    letter-spacing: 0.1203125em; }
 section#start .content#in #about {
-  font-family: "proxima-nova-condensed", sans-serif;
-  font-size: 1.11111em;
-  line-height: 1.2em;
-  padding-top: 1.33333em; }
-section#start .content#in #name {
+  font-family: "ff-tisa-web-pro", serif;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.33333em;
+  letter-spacing: 0.0203125em; }
+section#start .content#in a #dl {
   font-family: "alternate-gothic-no-3-d", sans-serif;
-  font-size: 1.55556em;
-  line-height: 0.85714em; }
-section#start .content#me {
-  font-family: "proxima-nova-condensed", sans-serif; }
-  section#start .content#me #introduction {
-    font-size: 1.11111em;
-    line-height: 1.2em;
-    padding-top: 0.75em;
-    padding-left: 0.66667em; }
-
-section#exercises.section2 .content#wall ul#portfolio li {
-  font-family: "alternate-gothic-no-3-d", sans-serif;
-  font-size: 1.11111em;
-  line-height: 1.2em;
+  font-size: 1.33333em;
+  line-height: 1.5em;
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 0.75em; }
+  letter-spacing: 0.1203125em; }
 
 footer#footer p {
   font-size: 0.77778em;
   line-height: 1.71429em; }
+
+/*Layout and Display*/
+header, footer, section, p, a {
+  display: block; }
+
+header#header, footer#footer {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em; }
+
+section#start {
+  height: 42.66667em;
+  position: relative;
+  opacity: 0.72; }
+  section#start header#header img {
+    max-width: 2em;
+    padding-top: 0.66667em; }
+  section#start header#header h1 {
+    padding-top: 0.66667em; }
+  section#start .content#in #about {
+    padding: 1.33333em; }
+  section#start .content#in a #dl {
+    width: 9em;
+    margin: 0 auto;
+    padding: 0.93333em;
+    -moz-border-radius: 0.53333em;
+    -webkit-border-radius: 0.53333em;
+    border-radius: 0.53333em; }

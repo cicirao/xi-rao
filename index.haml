@@ -11,41 +11,31 @@
 		#page
 			%section#start.start
 				%header#header{:role => "banner"}
+					%img{:src => "/assets/images/rx2.png"}
 					%h1 
-						%span P
-						ortfolio
+						:markdown
+							document 
+
+							design 
+
+							portfolio
 				.content#in
 					#about
 						:markdown
 							This portfolio book contains 18 exercises of Document Design.
 
-							"Typography"
+							typography
 
-							"Color"
+							color
 
-							"Grid"
+							grid
 
 							..
-					#name
-						:markdown
-							[Xi Rao](#)
-				.content#me
-					#introduction
-						:markdown
-							Hi, I am Xi Rao, a designer. Now I'm in Chicago.
-
-							I'm interested in many kinds of design: document design, graphic design, interaction design..
-
-							If you are interested in me or my works. Please feel free to contact me by [cicirao@gmail.com]().
-					#back
-			%section#exercises.section2
-				.content#wall
-					%ul#portfolio
-						%li#ex1
-							%a{:href => "#"}
-								:markdown
-									Draw these words
+					%a{:href => "/assets/DD.pdf"}
+						#dl
+							:markdown
+								DOWNLOAD
 			%footer#footer
 				:markdown
-					Site created by Xi Rao using HAML, SASS, and GoogleFonts. [Source on GitHub]().
+					Site created by Xi Rao using HAML, SASS, and Typykit.
 		%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", :type => "text/javascript"}
